@@ -1,7 +1,9 @@
 package com.example.chechkactivity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.chechkactivity.databinding.ActivityMain2Binding
 
 class MainActivity2 : AppCompatActivity() {
@@ -10,6 +12,27 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.button4.setOnClickListener {
+
+            val name =binding.name.text.toString()
+            val password=binding.Password.text.toString()
+
+            if(password.length<6 || name.isEmpty()){
+                Toast.makeText(applicationContext,"Please check Password or name ",Toast.LENGTH_SHORT).show()
+            }else{
+                return@setOnClickListener
+            }
+
+//            val intent =Intent(this@MainActivity2,)
+
+
+
+
+
+        }
+
+
 
     }
 }
