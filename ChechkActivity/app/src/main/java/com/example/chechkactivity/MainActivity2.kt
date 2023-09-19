@@ -18,14 +18,17 @@ class MainActivity2 : AppCompatActivity() {
             val name =binding.name.text.toString()
             val password=binding.Password.text.toString()
 
-            if(password.length<6 || name.isEmpty()){
-                Toast.makeText(applicationContext,"Please check Password or name ",Toast.LENGTH_SHORT).show()
-            }else{
-                return@setOnClickListener
+            if(password.length<6 || name.isEmpty()) {
+                Toast.makeText(
+                    applicationContext,
+                    "Please check Password or name ",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
 
-//            val intent =Intent(this@MainActivity2,)
-
+                val intent = Intent(this@MainActivity2, MainActivity3::class.java)
+                startActivity(intent)
+                finish()
 
 
 
