@@ -26,6 +26,16 @@ class MainActivity3 : AppCompatActivity() {
 
 
         }
+        binding.tab.setOnClickListener{
+            val intent =Intent(this@MainActivity3,MainActivity5::class.java)
+            startActivity(intent)
+            finish()
+        }
+        binding.tr.setOnClickListener{
+            val intent =Intent(this@MainActivity3,MainActivity5::class.java)
+            startActivity(intent)
+            finish()
+        }
 
 
 
