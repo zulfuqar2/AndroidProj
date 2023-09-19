@@ -1,5 +1,6 @@
 package com.example.chechkactivity
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -23,6 +24,7 @@ private val productList =ArrayList<String>()
        val item = productList[position]
 //        holder.binding.days.text=item
         holder.binding.weeks.text=item
+
     }
 
      fun updateAdapter(list :List<String>){
@@ -32,7 +34,9 @@ private val productList =ArrayList<String>()
          productList.addAll(list)
          notifyDataSetChanged()
 
+
      }
+
 
 
 

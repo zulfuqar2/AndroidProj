@@ -1,5 +1,6 @@
 package com.example.chechkactivity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
@@ -15,12 +16,26 @@ class MainActivity3 : AppCompatActivity() {
         setContentView(binding.root)
         setup()
 
+        binding.inup.setOnClickListener(){
+
+
+            val intent=Intent(this@MainActivity3,MainActivity4::class.java)
+            startActivity(intent)
+
+
+
+
+        }
+
+
+
+
     }
 
 
     private  fun setup(){
 
-        binding.vrProduct.layoutManager=GridLayoutManager(this,1)
+        binding.vrProduct.layoutManager=GridLayoutManager(this,3)
         binding.vrProduct.adapter=adapter
         val week= listOf(
             "Bazar ertəsi",
@@ -34,8 +49,26 @@ class MainActivity3 : AppCompatActivity() {
 
 
             )
+        val days= listOf(
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07"
+
+        )
         adapter.updateAdapter(week)
+
     }
+//    private fun setup2(){
+//
+//
+//
+//
+//    }
+
 
 
 }

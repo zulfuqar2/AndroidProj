@@ -10,6 +10,52 @@
         android:id="@+id/vrProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/hm"
+        android:layout_width="69dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="@+id/inup"
+        app:layout_constraintEnd_toStartOf="@+id/inup"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inup"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/hm" />
+
+    <ImageView
+        android:id="@+id/inup"
+        android:layout_width="69dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tab"
+        app:layout_constraintEnd_toStartOf="@+id/tab"
+        app:layout_constraintTop_toTopOf="@+id/tab"
+        app:srcCompat="@drawable/inup" />
+
+    <ImageView
+        android:id="@+id/tab"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/tb" />
+
+    <ImageView
+        android:id="@+id/tr"
+        android:layout_width="59dp"
+        android:layout_height="51dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/tab"
+        app:layout_constraintTop_toTopOf="@+id/tab"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tr" />
 </androidx.constraintlayout.widget.ConstraintLayout>
