@@ -13,28 +13,14 @@
         android:id="@+id/exit"
         android:layout_width="332dp"
         android:layout_height="41dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="40dp"
         android:text="-"
         android:textAlignment="center"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textname4" />
-
-    <TextView
-        android:id="@+id/texttime4"
-        android:layout_width="102dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="64dp"
-        android:background="#E1DFDF"
-        android:text="13:00"
-        android:textAlignment="center"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textname3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textname3"
-        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/nameExit"
@@ -46,38 +32,9 @@
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/exitname" />
-
-    <TextView
-        android:id="@+id/textname5"
-        android:layout_width="228dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="16dp"
-        android:background="#E1DFDF"
-        android:text="Abbasov Səbinə"
-        android:textAlignment="center"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameExit" />
-
-    <TextView
-        android:id="@+id/texttime3"
-        android:layout_width="102dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="64dp"
-        android:background="#E1DFDF"
-        android:text="19:00"
-        android:textAlignment="center"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textname5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textname5"
-        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textname4"
@@ -90,15 +47,26 @@
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textname5" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Çıxış"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter" />
 
     <TextView
         android:id="@+id/texttime"
         android:layout_width="102dp"
         android:layout_height="33dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginEnd="52dp"
         android:background="#E1DFDF"
         android:text="18:30"
         android:textAlignment="center"
@@ -106,46 +74,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/textname4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textname4"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/timeExit"
-        android:layout_width="102dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="64dp"
-        android:background="#E1DFDF"
-        android:textAlignment="center"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="@+id/nameExit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nameExit"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/texttime5"
-        android:layout_width="102dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="64dp"
-        android:background="#E1DFDF"
-        android:text="12:25"
-        android:textAlignment="center"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textname2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textname2"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/firstime"
-        android:layout_width="102dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="64dp"
-        android:background="#E1DFDF"
-        android:textAlignment="center"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="@+id/firsname"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/firsname"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
@@ -157,13 +85,40 @@
         android:inputType="time"
         app:layout_constraintBottom_toBottomOf="@+id/exitname"
         app:layout_constraintTop_toTopOf="@+id/exitname"
-        tools:layout_editor_absoluteX="242dp" />
+        tools:layout_editor_absoluteX="254dp" />
+
+    <TextView
+        android:id="@+id/texttime3"
+        android:layout_width="102dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="52dp"
+        android:background="#E1DFDF"
+        android:text="19:00"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textname5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textname5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/timeExit"
+        android:layout_width="102dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="52dp"
+        android:background="#E1DFDF"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nameExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nameExit"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/exitname"
         android:layout_width="186dp"
         android:layout_height="39dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Könüllü"
@@ -173,19 +128,130 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
-        android:id="@+id/textname2"
+        android:id="@+id/textname5"
         android:layout_width="228dp"
         android:layout_height="33dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="#E1DFDF"
         android:text="Abbasov Səbinə"
         android:textAlignment="center"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameExit" />
+
+    <TextView
+        android:id="@+id/textname2"
+        android:layout_width="228dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="4dp"
+        android:background="#E1DFDF"
+        android:text="Abbasov Səbinə"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/firsname" />
+
+    <EditText
+        android:id="@+id/entername"
+        android:layout_width="186dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Könüllü"
+        android:inputType="text"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/firstime"
+        android:layout_width="102dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="52dp"
+        android:background="#E1DFDF"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/firsname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/firsname"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/texttime4"
+        android:layout_width="102dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="52dp"
+        android:background="#E1DFDF"
+        android:text="13:00"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textname3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textname3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/firsname"
+        android:layout_width="228dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="12dp"
+        android:background="#E1DFDF"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entername" />
+
+    <TextView
+        android:id="@+id/texttime5"
+        android:layout_width="102dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="52dp"
+        android:background="#E1DFDF"
+        android:text="12:25"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textname2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textname2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/enterclock"
+        android:layout_width="116dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:ems="10"
+        android:hint="Saat"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="@+id/entername"
+        app:layout_constraintStart_toEndOf="@+id/entername"
+        app:layout_constraintTop_toTopOf="@+id/entername"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textname3"
+        android:layout_width="228dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="12dp"
+        android:background="#E1DFDF"
+        android:text="Ağamallyeva Aydan"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textname2" />
 
     <Button
         android:id="@+id/enter"
@@ -196,38 +262,9 @@
         android:textAlignment="center"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintHorizontal_bias="0.329"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textname3" />
-
-    <TextView
-        android:id="@+id/textname3"
-        android:layout_width="228dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="8dp"
-        android:background="#E1DFDF"
-        android:text="Ağamallyeva Aydan"
-        android:textAlignment="center"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textname2" />
-
-    <TextView
-        android:id="@+id/firsname"
-        android:layout_width="228dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="8dp"
-        android:background="#E1DFDF"
-        android:textAlignment="center"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/entername" />
 
     <TextView
         android:id="@+id/textView4"
@@ -240,41 +277,48 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/entername"
-        android:layout_width="186dp"
-        android:layout_height="39dp"
+    <ImageView
+        android:id="@+id/homelogin"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
-        android:ems="10"
-        android:hint="Könüllü"
-        android:inputType="text"
-        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/exit"
+        app:srcCompat="@drawable/hm" />
 
-    <EditText
-        android:id="@+id/enterclock"
-        android:layout_width="116dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="40dp"
-        android:ems="10"
-        android:hint="Saat"
-        android:inputType="time"
-        app:layout_constraintBottom_toBottomOf="@+id/entername"
-        app:layout_constraintStart_toEndOf="@+id/entername"
-        app:layout_constraintTop_toTopOf="@+id/entername"
-        app:layout_constraintVertical_bias="0.0" />
+    <ImageView
+        android:id="@+id/enterexit"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/homelogin"
+        app:layout_constraintStart_toEndOf="@+id/homelogin"
+        app:layout_constraintTop_toTopOf="@+id/homelogin"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/inup" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="24dp"
-        android:text="Çıxış"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enter" />
+    <ImageView
+        android:id="@+id/cedvel2"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/enterexit"
+        app:layout_constraintStart_toEndOf="@+id/enterexit"
+        app:layout_constraintTop_toTopOf="@+id/enterexit"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tb" />
+
+    <ImageView
+        android:id="@+id/translate"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cedvel2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cedvel2"
+        app:layout_constraintTop_toTopOf="@+id/cedvel2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tr" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.chechkactivity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -20,6 +21,31 @@ class MainActivity4 : AppCompatActivity() {
         binding.exit.setOnClickListener {
             exit()
         }
+        binding.homelogin.setOnClickListener {
+
+            val intent=Intent(this@MainActivity4,MainActivity3::class.java)
+            startActivity(intent)
+            finish()
+
+        }
+        binding.translate.setOnClickListener {
+            val intent=Intent(this@MainActivity4,MainActivity6::class.java)
+            startActivity(intent)
+            finish()
+
+
+        }
+        binding.enterexit.setOnClickListener {
+            Toast.makeText(applicationContext,"You now here ",Toast.LENGTH_SHORT).show()
+        }
+        binding.cedvel2.setOnClickListener {
+
+            val inent=Intent(this@MainActivity4,MainActivity5::class.java)
+            startActivity(intent)
+            finish()
+
+        }
+
     }
 
     private fun Add() {

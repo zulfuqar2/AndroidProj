@@ -6,4 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity6">
 
+    <ImageView
+        android:id="@+id/hometr"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/hm" />
+
+    <ImageView
+        android:id="@+id/exittr"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hometr"
+        app:layout_constraintStart_toEndOf="@+id/hometr"
+        app:layout_constraintTop_toTopOf="@+id/hometr"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/inup" />
+
+    <ImageView
+        android:id="@+id/cedveltr"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/exittr"
+        app:layout_constraintStart_toEndOf="@+id/exittr"
+        app:layout_constraintTop_toTopOf="@+id/exittr"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tb" />
+
+    <ImageView
+        android:id="@+id/selftr"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cedveltr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cedveltr"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tr" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/translatefor" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="407dp"
+        android:layout_height="182dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/trchoose" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="411dp"
+        android:layout_height="323dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/translate" />
 </androidx.constraintlayout.widget.ConstraintLayout>

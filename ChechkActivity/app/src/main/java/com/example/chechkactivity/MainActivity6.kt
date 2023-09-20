@@ -11,5 +11,11 @@ class MainActivity6 : AppCompatActivity() {
         binding= ActivityMain5Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
+
+
     }
+
 }
+
