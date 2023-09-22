@@ -17,30 +17,34 @@
 
     <ImageView
         android:id="@+id/hm"
-        android:layout_width="69dp"
-        android:layout_height="49dp"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="32dp"
         app:layout_constraintBottom_toBottomOf="@+id/inup"
         app:layout_constraintEnd_toStartOf="@+id/inup"
-        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/inup"
-        app:layout_constraintVertical_bias="0.666"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/hm" />
 
     <ImageView
         android:id="@+id/inup"
-        android:layout_width="69dp"
-        android:layout_height="50dp"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="46dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintBottom_toBottomOf="@+id/tab"
         app:layout_constraintEnd_toStartOf="@+id/tab"
+        app:layout_constraintStart_toEndOf="@+id/hm"
         app:layout_constraintTop_toTopOf="@+id/tab"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/inup" />
 
     <ImageView
         android:id="@+id/tab"
-        android:layout_width="53dp"
-        android:layout_height="51dp"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
         android:layout_marginEnd="140dp"
         android:layout_marginBottom="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,8 +53,8 @@
 
     <ImageView
         android:id="@+id/tr"
-        android:layout_width="59dp"
-        android:layout_height="51dp"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
         app:layout_constraintBottom_toBottomOf="@+id/tab"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"

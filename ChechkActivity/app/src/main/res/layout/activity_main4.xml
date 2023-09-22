@@ -80,12 +80,14 @@
         android:id="@+id/exitTime"
         android:layout_width="116dp"
         android:layout_height="41dp"
+        android:layout_marginEnd="52dp"
         android:ems="10"
         android:hint="Saat"
         android:inputType="time"
         app:layout_constraintBottom_toBottomOf="@+id/exitname"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/exitname"
-        tools:layout_editor_absoluteX="254dp" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/texttime3"
@@ -278,7 +280,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/homelogin"
+        android:id="@+id/backhm"
         android:layout_width="48dp"
         android:layout_height="29dp"
         android:layout_marginStart="16dp"
@@ -288,36 +290,36 @@
         app:srcCompat="@drawable/hm" />
 
     <ImageView
-        android:id="@+id/enterexit"
+        android:id="@+id/almost"
         android:layout_width="48dp"
         android:layout_height="29dp"
         android:layout_marginStart="64dp"
-        app:layout_constraintBottom_toBottomOf="@+id/homelogin"
-        app:layout_constraintStart_toEndOf="@+id/homelogin"
-        app:layout_constraintTop_toTopOf="@+id/homelogin"
+        app:layout_constraintBottom_toBottomOf="@+id/backhm"
+        app:layout_constraintStart_toEndOf="@+id/backhm"
+        app:layout_constraintTop_toTopOf="@+id/backhm"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/inup" />
 
     <ImageView
-        android:id="@+id/cedvel2"
+        android:id="@+id/excel"
         android:layout_width="48dp"
         android:layout_height="29dp"
         android:layout_marginStart="60dp"
-        app:layout_constraintBottom_toBottomOf="@+id/enterexit"
-        app:layout_constraintStart_toEndOf="@+id/enterexit"
-        app:layout_constraintTop_toTopOf="@+id/enterexit"
+        app:layout_constraintBottom_toBottomOf="@+id/almost"
+        app:layout_constraintStart_toEndOf="@+id/almost"
+        app:layout_constraintTop_toTopOf="@+id/almost"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/tb" />
 
     <ImageView
-        android:id="@+id/translate"
+        android:id="@+id/trans"
         android:layout_width="48dp"
         android:layout_height="29dp"
         android:layout_marginStart="48dp"
-        app:layout_constraintBottom_toBottomOf="@+id/cedvel2"
+        app:layout_constraintBottom_toBottomOf="@+id/excel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cedvel2"
-        app:layout_constraintTop_toTopOf="@+id/cedvel2"
+        app:layout_constraintStart_toEndOf="@+id/excel"
+        app:layout_constraintTop_toTopOf="@+id/excel"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/tr" />
 

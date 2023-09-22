@@ -15,60 +15,61 @@ class MainActivity4 : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.enter.setOnClickListener {
-            Add()
+            val enterName = binding.entername.text.toString()
+            val enterTime = binding.enterclock.text.toString()
+
+            if (enterName.isEmpty() || enterTime.isEmpty()) {
+                Toast.makeText(
+                    this@MainActivity4,
+                    "Please Fill correct Name or Time",
+                    Toast.LENGTH_SHORT
+                ).show()
+            } else {
+                binding.firsname.text = enterName
+                binding.firstime.text = enterTime
+
+            }
         }
 
         binding.exit.setOnClickListener {
-            exit()
-        }
-        binding.homelogin.setOnClickListener {
+            val nameex = binding.exitname.text.toString()
+            val exitClock = binding.timeExit.text.toString()
 
-            val intent=Intent(this@MainActivity4,MainActivity3::class.java)
+            if (nameex.isEmpty() || exitClock.isEmpty()) {
+                Toast.makeText(
+                    this@MainActivity4,
+                    "Please Fill correct Name or Time",
+                    Toast.LENGTH_SHORT
+                ).show()
+            } else {
+               val entry ="Name :$nameex  "
+                val clockk="$exitClock"
+                binding.nameExit.text=entry
+                binding.timeExit.text=clockk
+
+            }
+
+        }
+        binding.trans.setOnClickListener {
+            val intent = Intent(this@MainActivity4, MainActivity6::class.java)
             startActivity(intent)
             finish()
-
         }
-        binding.translate.setOnClickListener {
-            val intent=Intent(this@MainActivity4,MainActivity6::class.java)
+        binding.backhm.setOnClickListener {
+            val intent = Intent(this@MainActivity4, MainActivity3::class.java)
             startActivity(intent)
             finish()
-
-
         }
-        binding.enterexit.setOnClickListener {
-            Toast.makeText(applicationContext,"You now here ",Toast.LENGTH_SHORT).show()
-        }
-        binding.cedvel2.setOnClickListener {
-
-            val inent=Intent(this@MainActivity4,MainActivity5::class.java)
+        binding.excel.setOnClickListener {
+            val intent = Intent(this@MainActivity4, MainActivity5::class.java)
             startActivity(intent)
             finish()
-
+//
+        }
+        binding.almost.setOnClickListener {
+                Toast.makeText(applicationContext,"You Almost Here",Toast.LENGTH_SHORT).show()
         }
 
-    }
 
-    private fun Add() {
-        val enterName = binding.entername.text.toString()
-        val enterTime = binding.enterclock.text.toString()
-
-        if (enterName.isEmpty() || enterTime.isEmpty()) {
-            Toast.makeText(this@MainActivity4, "Please Fill correct Name or Time", Toast.LENGTH_SHORT).show()
-        } else {
-            binding.firsname.text = enterName
-            binding.firstime.text = enterTime
-        }
-    }
-
-    private fun exit() {
-        val nameex = binding.exitname.text.toString()
-        val exitClock = binding.timeExit.text.toString()
-
-        if (nameex.isEmpty() || exitClock.isEmpty()) {
-            Toast.makeText(this@MainActivity4, "Please Fill correct Name or Time", Toast.LENGTH_SHORT).show()
-        } else {
-            binding.nameExit.text = nameex
-            binding.timeExit.text = exitClock
-        }
     }
 }

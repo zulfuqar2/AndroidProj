@@ -1,10 +1,11 @@
 package com.example.chechkactivity
 
+import Adapter
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.chechkactivity.databinding.ActivityMain3Binding
 
 class MainActivity3 : AppCompatActivity() {
@@ -15,6 +16,9 @@ class MainActivity3 : AppCompatActivity() {
         binding = ActivityMain3Binding.inflate(layoutInflater)
         setContentView(binding.root)
         setup()
+
+
+
 
         binding.inup.setOnClickListener(){
 
@@ -32,9 +36,12 @@ class MainActivity3 : AppCompatActivity() {
             finish()
         }
         binding.tr.setOnClickListener{
-            val intent =Intent(this@MainActivity3,MainActivity5::class.java)
+            val intent =Intent(this@MainActivity3,MainActivity6::class.java)
             startActivity(intent)
             finish()
+        }
+        binding.hm.setOnClickListener {
+            Toast.makeText(applicationContext,"You Almost  Here ", Toast.LENGTH_SHORT).show()
         }
 
 
@@ -45,7 +52,7 @@ class MainActivity3 : AppCompatActivity() {
 
     private  fun setup(){
 
-        binding.vrProduct.layoutManager=GridLayoutManager(this,3)
+        binding.vrProduct.layoutManager=GridLayoutManager(this,7)
         binding.vrProduct.adapter=adapter
         val week= listOf(
             "Bazar ertəsi",
@@ -58,18 +65,11 @@ class MainActivity3 : AppCompatActivity() {
 
 
 
-            )
-        val days= listOf(
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07"
 
-        )
+            )
+
         adapter.updateAdapter(week)
+
 
     }
 //    private fun setup2(){
