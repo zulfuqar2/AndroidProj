@@ -32,6 +32,18 @@ class MainActivity5 : AppCompatActivity() {
             finish()
         }
 
+        binding.tesdiq.setOnClickListener{
+            Toast.makeText(applicationContext,"All Changes in the Table are Recorded  ",Toast.LENGTH_SHORT).show()
+
+
+
+            val intent=Intent(this@MainActivity5,MainActivity3::class.java)
+            startActivity(intent)
+            finish()
+
+
+        }
+
 
 
 
