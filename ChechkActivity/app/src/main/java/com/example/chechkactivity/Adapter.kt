@@ -41,6 +41,13 @@ class Adapter : RecyclerView.Adapter<Adapter.ProductViewHolder>() {
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
         val item = productList[position]
         holder.binding.weeks.text = item
+        holder.binding.cardViewv.setOnClickListener{
+
+
+
+
+
+        }
     }
 
     fun updateAdapter(list: List<String>) {
