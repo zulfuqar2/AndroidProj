@@ -13,7 +13,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="52dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/listentranslate"
         app:srcCompat="@drawable/hm" />
 
     <ImageView
@@ -50,18 +50,18 @@
         app:srcCompat="@drawable/tr" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/listentranslate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/translateImg"
         app:srcCompat="@drawable/translatefor" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/changeimg"
         android:layout_width="407dp"
         android:layout_height="182dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,12 +71,12 @@
         app:srcCompat="@drawable/trchoose" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/translateImg"
         android:layout_width="411dp"
         android:layout_height="323dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/changeimg"
         app:srcCompat="@drawable/translate" />
 </androidx.constraintlayout.widget.ConstraintLayout>
