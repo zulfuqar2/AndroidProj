@@ -1,3 +1,5 @@
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -5,9 +7,11 @@ import com.example.chechkactivity.databinding.ItemproductsBinding
 //import android.view.View
 //import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import com.example.chechkactivity.MainActivity3
+import com.example.chechkactivity.MainActivity7
 import com.example.chechkactivity.R
 
-class Adapter : RecyclerView.Adapter<Adapter.ProductViewHolder>() {
+class Adapter (val context:Context): RecyclerView.Adapter<Adapter.ProductViewHolder>() {
 
     private val productList = ArrayList<String>()
 
@@ -43,6 +47,10 @@ class Adapter : RecyclerView.Adapter<Adapter.ProductViewHolder>() {
         holder.binding.weeks.text = item
         holder.binding.cardViewv.setOnClickListener{
 
+                val intent=Intent(context,MainActivity7::class.java)
+            intent.putExtra("weekday",item)
+
+            context.startActivity(intent)
 
 
 

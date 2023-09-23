@@ -10,7 +10,7 @@ import com.example.chechkactivity.databinding.ActivityMain3Binding
 
 class MainActivity3 : AppCompatActivity() {
     private  lateinit var binding: ActivityMain3Binding
-    private val adapter=Adapter()
+    private val adapter=Adapter(this )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMain3Binding.inflate(layoutInflater)
@@ -51,6 +51,9 @@ class MainActivity3 : AppCompatActivity() {
 
 
     private  fun setup(){
+
+
+
 
         binding.vrProduct.layoutManager=GridLayoutManager(this,7)
         binding.vrProduct.adapter=adapter

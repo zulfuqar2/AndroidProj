@@ -39,4 +39,11 @@ class MainActivity7 : AppCompatActivity() {
 
 
     }
+
+
+//    private  fun setup(){
+//        val week=Intent
+//    }
+
 }
+
