@@ -10,11 +10,11 @@
         android:id="@+id/hometr"
         android:layout_width="48dp"
         android:layout_height="29dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listentranslate"
-        app:srcCompat="@drawable/hm" />
+        app:srcCompat="@drawable/house" />
 
     <ImageView
         android:id="@+id/exittr"
@@ -25,7 +25,7 @@
         app:layout_constraintStart_toEndOf="@+id/hometr"
         app:layout_constraintTop_toTopOf="@+id/hometr"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/inup" />
+        app:srcCompat="@drawable/arrowsleftright" />
 
     <ImageView
         android:id="@+id/cedveltr"
@@ -36,7 +36,7 @@
         app:layout_constraintStart_toEndOf="@+id/exittr"
         app:layout_constraintTop_toTopOf="@+id/exittr"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/tb" />
+        app:srcCompat="@drawable/table" />
 
     <ImageView
         android:id="@+id/selftr"
@@ -47,7 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/cedveltr"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/tr" />
+        app:srcCompat="@drawable/teres" />
 
     <ImageView
         android:id="@+id/listentranslate"

@@ -10,10 +10,11 @@ import android.view.animation.AnimationUtils
 import com.example.chechkactivity.MainActivity3
 import com.example.chechkactivity.MainActivity7
 import com.example.chechkactivity.R
+import com.example.chechkactivity.WeekData
 
 class Adapter (val context:Context): RecyclerView.Adapter<Adapter.ProductViewHolder>() {
 
-    private val productList = ArrayList<String>()
+    private val productList = ArrayList<WeekData>()
 
     inner class ProductViewHolder(val binding: ItemproductsBinding) : RecyclerView.ViewHolder(binding.root) {
         init {
@@ -44,21 +45,31 @@ class Adapter (val context:Context): RecyclerView.Adapter<Adapter.ProductViewHol
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
         val item = productList[position]
-        holder.binding.weeks.text = item
-        holder.binding.cardViewv.setOnClickListener{
+        holder.binding.weeks.text = item.week
+        holder.binding.days.text = item.day.toString()
 
-                val intent=Intent(context,MainActivity7::class.java)
-            intent.putExtra("weekday",item)
+        holder.binding.cardViewv.setOnHoverListener { v, event ->
+            when (event.action) {
+                android.view.MotionEvent.ACTION_HOVER_ENTER -> {
+                    val animation = AnimationUtils.loadAnimation(v.context, R.anim.scale)
+                    v.startAnimation(animation)
+                }
+                android.view.MotionEvent.ACTION_HOVER_EXIT -> {
 
+                }
+            }
+            true
+        }
+
+        holder.binding.cardViewv.setOnClickListener {
+            val intent = Intent(context, MainActivity7::class.java)
+            intent.putExtra("weekday", item.week)
             context.startActivity(intent)
-
-
-
-
         }
     }
 
-    fun updateAdapter(list: List<String>) {
+
+    fun updateAdapter(list: List<WeekData>) {
         productList.clear()
         productList.addAll(list)
         notifyDataSetChanged()

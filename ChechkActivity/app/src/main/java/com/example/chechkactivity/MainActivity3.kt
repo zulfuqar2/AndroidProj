@@ -57,21 +57,32 @@ class MainActivity3 : AppCompatActivity() {
 
         binding.vrProduct.layoutManager=GridLayoutManager(this,7)
         binding.vrProduct.adapter=adapter
-        val week= listOf(
-            "Bazar ertəsi",
-            "Çərşənbə axşamı",
-            "Çərşənbə",
-            "Cümə Axşamı",
-            "Cümə",
-            "Şənbə",
-            "Bazar",
-
-
-
+        val data= listOf(
+            WeekData(
+                25,"Bazar Ertəsi  "
+            ),
+            WeekData(
+                26,"Çərşənbə"
+            ),
+            WeekData(
+                27,"Çərşənbə axşamı"
+            ),
+            WeekData(
+                28,"Cümə Axşamı "
+            ),
+            WeekData(
+                29,"Cümə"
+            ),
+            WeekData(
+                30,"Şənbə "
+            ),
+            WeekData(
+                1,"Bazar "
+            ),
 
             )
 
-        adapter.updateAdapter(week)
+        adapter.updateAdapter(data)
 
 
     }

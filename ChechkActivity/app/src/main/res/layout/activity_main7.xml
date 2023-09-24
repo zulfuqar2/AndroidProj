@@ -14,7 +14,7 @@
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/hm" />
+        app:srcCompat="@drawable/house" />
 
     <ImageView
         android:id="@+id/vievex"
@@ -25,7 +25,7 @@
         app:layout_constraintStart_toEndOf="@+id/vievHm"
         app:layout_constraintTop_toTopOf="@+id/vievHm"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/inup" />
+        app:srcCompat="@drawable/arrowsleftright" />
 
     <ImageView
         android:id="@+id/vievTable"
@@ -36,7 +36,7 @@
         app:layout_constraintStart_toEndOf="@+id/vievex"
         app:layout_constraintTop_toTopOf="@+id/vievex"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/tb" />
+        app:srcCompat="@drawable/table" />
 
     <ImageView
         android:id="@+id/vievTr"
@@ -47,7 +47,7 @@
         app:layout_constraintHorizontal_bias="0.803"
         app:layout_constraintStart_toEndOf="@+id/vievTable"
         app:layout_constraintTop_toTopOf="@+id/vievTable"
-        app:srcCompat="@drawable/tr" />
+        app:srcCompat="@drawable/teres" />
 
     <TextView
         android:id="@+id/weeksview"

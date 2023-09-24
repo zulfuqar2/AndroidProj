@@ -15,7 +15,7 @@
         android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/hm" />
+        app:srcCompat="@drawable/house" />
 
     <ImageView
         android:id="@+id/exitced"
@@ -26,7 +26,7 @@
         app:layout_constraintStart_toEndOf="@+id/homeced"
         app:layout_constraintTop_toTopOf="@+id/homeced"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/inup" />
+        app:srcCompat="@drawable/arrowsleftright" />
 
     <ImageView
         android:id="@+id/excel"
@@ -37,7 +37,7 @@
         app:layout_constraintStart_toEndOf="@+id/exitced"
         app:layout_constraintTop_toTopOf="@+id/exitced"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/tb" />
+        app:srcCompat="@drawable/table" />
 
     <ImageView
         android:id="@+id/trced"
@@ -48,7 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/excel"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/tr" />
+        app:srcCompat="@drawable/teres" />
 
     <TextView
         android:id="@+id/textView5"
