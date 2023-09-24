@@ -7,11 +7,12 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewv"
-        android:layout_width="69dp"
-        android:layout_height="106dp"
+        android:layout_width="58dp"
+        android:layout_height="77dp"
         android:layout_margin="5dp"
         android:layout_marginVertical="10dp"
         android:layout_marginTop="16dp"
+        android:layout_marginLeft="5dp"
         android:clickable="true"
         app:cardBackgroundColor="#1E33CA"
         app:cardCornerRadius="16dp"
@@ -28,7 +29,10 @@
                 android:id="@+id/weeks"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="4dp"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="8sp"
@@ -41,8 +45,12 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <androidx.cardview.widget.CardView
-                android:layout_width="53dp"
-                android:layout_height="39dp"
+                android:layout_width="42dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
                 app:cardCornerRadius="150dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -53,9 +61,9 @@
 
                 <TextView
                     android:id="@+id/days"
-                    android:layout_marginTop="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
                     android:text="23"
                     android:textAlignment="center"
                     android:textColor="#000000"
