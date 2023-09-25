@@ -6,12 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity3">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="459dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/ctext33"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="16 Iyun 2023,18:00" />
+
+        <TextView
+            android:id="@+id/rx17salam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="“ABAD” Heydər Əliyevin 100 illik yubileyinə həsr olunmuş sərgi keçirib"
+            android:textColor="#24A2ED"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ee3dash2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58dp"
+            android:text="16 iyun 2023-cü il tarixində “ABAD” publik hüquqi şəxsin təşkilatçılığı ilə Şəki Keramika və Tətbiqi Sənət Mərkəzində Ümummilli lider Heydər Əliyevin 100 illik yubileyinə həsr olunmuş “Ulu Öndərim” sərgisi baş tutub." />
+    </androidx.cardview.widget.CardView>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/vrProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.005"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -62,5 +95,104 @@
         app:layout_constraintTop_toTopOf="@+id/tab"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/teres" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/d"
+        android:layout_width="414dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/cc33"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="16 Iyun 2023,18:00" />
+
+        <TextView
+            android:id="@+id/rx17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="“ABAD” Heydər Əliyevin 100 illik yubileyinə həsr olunmuş sərgi keçirib"
+            android:textColor="#24A2ED"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ee32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58dp"
+            android:text="16 iyun 2023-cü il tarixində “ABAD” publik hüquqi şəxsin təşkilatçılığı ilə Şəki Keramika və Tətbiqi Sənət Mərkəzində Ümummilli lider Heydər Əliyevin 100 illik yubileyinə həsr olunmuş “Ulu Öndərim” sərgisi baş tutub."
+            android:textSize="12sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/salam34"
+        android:layout_width="406dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="4dp"
+        app:cardBackgroundColor="#CEDBE3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14 iyun 2023, 15:55" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="“ASAN xidmət” Ümummilli liderin 100 iliyinə həsr olunmuş konsert proqramı təşkil edib."
+            android:textColor="#2E82E1" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="71dp"
+            android:text="13 iyun 2023-cü il tarixində Xətai rayonundakı Heydər Parkında konsert proqramı təşkil olunub. “ASAN xidmət”in və Xətai Rayon İcra Hakimiyyətinin birgə təşkilatçılığı, ASAN radionun dəstəyi ilə reallaşdırılan tədbir Ümummilli lider Heydər Əliyevin 100 illik yubileyinə, o cümlədən Milli Qurtuluş Gününə həsr olunub."
+            android:textSize="12sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="459dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salam34">
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09 iyun 2023, 17:00" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Bilim Bakı” mərkəzi 1 yaşında!"
+            android:textColor="#3586E1" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="9 iyun 2023-cü il tarixində Azərbaycan Respublikasının Prezidenti yanında Vətəndaşlara Xidmət və Sosial İnnovasiyalar üzrə Dövlət Agentliyinin “İnnovasiyalar Mərkəzi”nin təşkilatçılığı ilə &quot;Bilim Bakı” mərkəzinin 1 illiyinə həsr olunan tədbir keçirilib."
+            android:textSize="12sp" />
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

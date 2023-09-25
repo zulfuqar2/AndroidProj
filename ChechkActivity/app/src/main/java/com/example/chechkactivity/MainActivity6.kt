@@ -33,15 +33,8 @@ class MainActivity6 : AppCompatActivity() {
   Toast.makeText(applicationContext,"You Almost  Here ",Toast.LENGTH_SHORT).show()
 
         }
-        binding.changeimg.setOnClickListener {
-            Toast.makeText(applicationContext,"This Function Coming Soon , Thank you your patience",Toast.LENGTH_SHORT).show()
-        }
-        binding.translateImg.setOnClickListener {
-            Toast.makeText(applicationContext,"This Function Coming Soon , Thank you your patience",Toast.LENGTH_SHORT).show()
-        }
-        binding.listentranslate.setOnClickListener {
-            Toast.makeText(applicationContext,"This Function Coming Soon , Thank you your patience",Toast.LENGTH_SHORT).show()
-        }
+
+
 
 
     }
