@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.example.chechkactivity.databinding.ActivityMain4Binding
 
 class MainActivity4 : AppCompatActivity() {
@@ -27,10 +28,27 @@ class MainActivity4 : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
-                binding.firsname.text = enterName
-                binding.firstime.text = enterTime
+                val builder = AlertDialog.Builder(this@MainActivity4)
+                builder.setTitle("Əminsinizmi?")
+                builder.setMessage("Dəyişiklikləri yadda saxlamağ istədiyinizə əminsinizmi?")
+
+                builder.setPositiveButton("Bəli") { dialog, which ->
+                    // Kullanıcı "Evet"i seçtiğinde buradaki kod çalışır
+                    binding.firsname.text = enterName
+                    binding.firstime.text = enterTime
+                    dialog.dismiss() // Dialog penceresini kapat
+                }
+
+                builder.setNegativeButton("Xeyir") { dialog, which ->
+
+                    dialog.dismiss()
+                }
+
+                val dialog = builder.create()
+                dialog.show()
             }
         }
+
 
         binding.exit.setOnClickListener {
             val nameex = binding.exitname.text.toString()
