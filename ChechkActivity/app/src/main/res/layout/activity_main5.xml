@@ -102,14 +102,16 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TableLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:stretchColumns="0,1,2,3,4"
         app:layout_constraintBottom_toTopOf="@+id/tesdiq"
         app:layout_constraintTop_toBottomOf="@+id/textView7">
 
         <!-- Başlık Satırı -->
-        <TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -152,7 +154,7 @@
         </TableRow>
 
         <!-- Veri Satırları -->
-        <TableRow>
+        <TableRow android:layout_width="370dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -163,35 +165,36 @@
                 android:text="İ.Xədicə" />
 
             <TextView
+                android:id="@+id/bagcha1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:padding="8dp" />
 
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/check" />
+
             <TextView
+                android:id="@+id/sorgu1.1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:padding="8dp" />
 
-            <TextView
+            <ImageView
+                android:id="@+id/imageView18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#FFFFFF"
-                android:gravity="center"
-                android:padding="8dp" />
+                app:srcCompat="@drawable/check" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#FFFFFF"
-                android:gravity="center"
-                android:padding="8dp" />
         </TableRow>
 
-        <TableRow>
+        <TableRow android:layout_width="370dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -202,6 +205,7 @@
                 android:text="A.Günay" />
 
             <TextView
+                android:id="@+id/bagca2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
@@ -209,6 +213,7 @@
                 android:padding="8dp" />
 
             <TextView
+                android:id="@+id/sorgu1.2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
@@ -216,6 +221,7 @@
                 android:padding="8dp" />
 
             <TextView
+                android:id="@+id/sorgu.2.2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
@@ -223,14 +229,16 @@
                 android:padding="8dp" />
 
             <TextView
+                android:id="@+id/nazarat2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:padding="8dp" />
+
         </TableRow>
 
-        <TableRow>
+        <TableRow android:layout_width="370dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -241,6 +249,7 @@
                 android:text="L.Bilal" />
 
             <TextView
+                android:id="@+id/bagca3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
@@ -248,6 +257,7 @@
                 android:padding="8dp" />
 
             <TextView
+                android:id="@+id/sorgu1.3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
@@ -255,6 +265,7 @@
                 android:padding="8dp" />
 
             <TextView
+                android:id="@+id/sorgu.2.3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
@@ -262,6 +273,7 @@
                 android:padding="8dp" />
 
             <TextView
+                android:id="@+id/nazarat3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
@@ -269,7 +281,9 @@
                 android:padding="8dp" />
         </TableRow>
 
-        <TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -280,6 +294,7 @@
                 android:text="A.Fərid" />
 
             <TextView
+                android:id="@+id/bagca4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
@@ -287,6 +302,7 @@
                 android:padding="8dp" />
 
             <TextView
+                android:id="@+id/sorgu1.4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
@@ -294,6 +310,7 @@
                 android:padding="8dp" />
 
             <TextView
+                android:id="@+id/sorgu24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
@@ -301,6 +318,7 @@
                 android:padding="8dp" />
 
             <TextView
+                android:id="@+id/nazarat4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
@@ -319,6 +337,7 @@
                 android:text="M.Vüsalə" />
 
             <TextView
+                android:id="@+id/bagcha5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
@@ -326,6 +345,7 @@
                 android:padding="8dp" />
 
             <TextView
+                android:id="@+id/sorgu1.5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
@@ -333,6 +353,7 @@
                 android:padding="8dp" />
 
             <TextView
+                android:id="@+id/sorgu2.5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
@@ -340,6 +361,7 @@
                 android:padding="8dp" />
 
             <TextView
+                android:id="@+id/nazarat5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
