@@ -1,10 +1,14 @@
 package com.example.chechkactivity
 
 import Adapter
+import android.animation.AnimatorInflater
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.Toast
+import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.chechkactivity.databinding.ActivityMain3Binding
 
@@ -16,6 +20,7 @@ class MainActivity3 : AppCompatActivity() {
         binding = ActivityMain3Binding.inflate(layoutInflater)
         setContentView(binding.root)
         setup()
+        setImageViewClickListeners()
 
 
 
@@ -86,13 +91,32 @@ class MainActivity3 : AppCompatActivity() {
 
 
     }
-//    private fun setup2(){
-//
-//
-//
-//
-//    }
 
+    private fun setImageViewClickListeners() {
+        val animDuration = 500 // Animasyon süresi (milisaniye cinsinden)
+
+        setImageViewClickListener(binding.hm, animDuration)
+        setImageViewClickListener(binding.inup, animDuration)
+        setImageViewClickListener(binding.tab, animDuration)
+        setImageViewClickListener(binding.tr, animDuration)
+    }
+
+    @SuppressLint("ResourceType")
+    private fun setImageViewClickListener(imageView: ImageView, animDuration: Int) {
+        imageView.setOnClickListener {
+            val fadeIn = AnimatorInflater.loadAnimator(this, R.anim.fade_in)
+            fadeIn.duration = animDuration.toLong()
+            fadeIn.setTarget(imageView)
+            fadeIn.start()
+
+            // 5 saniye sonra arka plan rengini sıfırla
+            imageView.postDelayed({
+                ViewCompat.setBackground(imageView, null)
+            }, 5000)
+
+            // Diğer ImageView'lere tıklama işlemleri burada devam edebilir...
+        }
+    }
 
 
 }

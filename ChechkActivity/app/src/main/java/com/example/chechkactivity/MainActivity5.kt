@@ -44,12 +44,12 @@ class MainActivity5 : AppCompatActivity() {
 
         }
 
-        binding.imgtell.setOnClickListener {
-            Toast.makeText(applicationContext,"This Function Coming soon ",Toast.LENGTH_SHORT).show()
-
-
-
-        }
+//        binding.imgtell.setOnClickListener {
+//            Toast.makeText(applicationContext,"This Function Coming soon ",Toast.LENGTH_SHORT).show()
+//
+//
+//
+//        }
 
 
 
